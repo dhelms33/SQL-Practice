@@ -4,6 +4,7 @@
 -- Author: Dereck Helms
 -- Date: 2025-04-01
 -- =============================================
+--stopped 2:01--
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY, --  SERIAL AUTO INCREMENTS--
