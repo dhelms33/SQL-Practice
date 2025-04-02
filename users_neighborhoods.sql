@@ -25,3 +25,10 @@ FROM neighborhoods
 WHERE name_neighborhood = ''
 LEFT JOIN users 
 ON neighborhoods.id = users.neighborhood_id
+
+--alternatively--
+SELECT DISTINCT n.name
+FROM neighborhoods n
+LEFT JOIN users u
+ON n.id = u.neighborhood_id
+WHERE u.id IS NULL --no users--
